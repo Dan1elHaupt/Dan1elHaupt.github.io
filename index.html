@@ -14,9 +14,18 @@
     function GetURL() {
 
         var gfg = document.URL;
-
-        document.getElementById("url").innerHTML = gfg;
         console.log(gfg);
+        body = {
+          clinet_id = "Iv1.622a1872fb940cbf"
+          client_secret = 
+          code = gfg.substring(gfg.indexOf("="))
+        }
+
+  fetch('https://github.com/login/oauth/access_token', { method: 'POST', headers: 
+                                                        { 'Accept': 'application/json', 'Content-Type': 'application/json'},
+                                                       Body: body}).then(response => response.text()) .then(text => console.log(text))
+
+
     }
 
     </script>
