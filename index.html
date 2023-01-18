@@ -6,15 +6,21 @@
 </p><p>
   We're going to now talk to the GitHub API. Ready?
   <a href="https://github.com/login/oauth/authorize?scope=user:email&client_id=Iv1.622a1872fb940cbf">Click here</a> to begin!
-  <script>
+  <button onclick="GetURL()"> Get URL </button>
+
+    <p id="url"></p>
+    <script>
+
     function GetURL() {
 
         var gfg = document.URL;
 
-         console.log(gfg);
-
+        document.getElementById("url").innerHTML = gfg;
+        console.log(gfg);
     }
-  </script>
+
+    </script>
+  
 <!--   <button onclick="Login()">Login</button> -->
 </p><p>
   If that link doesn't work, remember to provide your own <a href="/apps/building-oauth-apps/authorizing-oauth-apps/">Client ID</a>!
