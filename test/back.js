@@ -1,8 +1,8 @@
 function githubLogin(){
     const xhr = new XMLHttpRequest();
     xhr.open("GET", "https://github.com/login/oauth/authorize");
-    xhr.setRequestHeader("Access-Control-Allow-Origin", "*");
-    xhr.setRequestHeader("Access-Control-Allow-Headers", "X-Requested-With");
+    // xhr.setRequestHeader("Access-Control-Allow-Origin", "*");
+    // xhr.setRequestHeader("Access-Control-Allow-Headers", "X-Requested-With");
 
     xhr.send();
     xhr.responseType = "json";
